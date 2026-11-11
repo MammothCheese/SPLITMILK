@@ -1,7 +1,7 @@
 # SPLITMILK user guide
 
 SPLITMILK turns the M-VAVE FM-1 into two instruments on one keyboard, with effects, an arpeggiator, a drum machine
-and a pad sequencer. This guide covers everything it does. For installing it, see the [README](../README.md).
+and a pad sequencer.
 
 **Contents**
 
@@ -29,12 +29,7 @@ The keyboard is split in two, and each half is its own instrument:
 | **CHOC** (left) | the lower keys, F3 to E4 at first | off, lit while pressed | the left half, chocolate brown |
 | **BERRY** (right) | the upper keys, F4 to G5 at first | always lit, dark while pressed | the right half, strawberry pink |
 
-Both play at the same time. At first CHOC is a piano and BERRY a music box; you can give each any of the 24 sounds.
-
-### Switching on
-
-The loading screen fills a glass with chocolate and strawberry milk, then the main screen appears. Press any key or
-button to skip it. Your last setup comes back as you left it.
+Both play at the same time.
 
 ### The main screen
 
@@ -45,7 +40,7 @@ Each half of the screen shows one instrument, with its four settings numbered af
 3. **MODE**: how a key plays (single note, a chord, an octave, or an arpeggio)
 4. **VOLUME**: from 0 to 100 %, shown as a glass of milk filling up
 
-A small keyboard at the bottom of each half shows the keys you are holding. The bar along the bottom of the screen
+A small keyboard at the bottom of each half shows the keyboard split. The bar along the bottom of the screen
 shows the drum kit, the tempo and the 16 steps of the drum pattern; it also shows short messages when you change
 something.
 
@@ -101,13 +96,13 @@ The arpeggiator follows the tempo, whether or not the drums are playing. Its spe
 
 Turn **SELECT** on the main screen to move the split one key at a time: clockwise gives CHOC more keys, anticlockwise
 gives BERRY more. Each side always keeps at least one key. While you turn, the bar at the bottom shows where the split
-is (for example `SPLIT E4 | F4`), and the key lights follow. Notes that are sounding carry on.
+is (for example `SPLIT E4 | F4`), and the key lights follow.
 
 ### Changing key
 
 Turn **PRESETS** to move everything up or down a semitone at a time, up to an octave either way: both instruments,
 the chords, the arpeggiator, Paddock and incoming MIDI notes. The bar shows the key while you turn (for example
-`KEY D +2`) and keeps showing it next to the tempo when it isn't C. Changing key stops the notes that are sounding.
+`KEY D +2`) and keeps showing it next to the tempo when it isn't C.
 
 ### Tempo
 
@@ -140,16 +135,10 @@ Each instrument has five effects:
 | **LFO** | Chorus | Rate, Depth, Level |
 | **EDIT** | Phaser | Rate, Depth, Feedback |
 
-- **Tap** a button to turn that effect on or off for the chosen instrument. The button lights while the effect is on,
-  and the bar shows a message (for example `REVERB ON  CHOC`).
+- **Tap** a button to turn that effect on or off for the chosen instrument. The button lights while the effect is on.
 - **Hold** a button for half a second to open its page. There, **KNOB 1** turns the effect on (three clicks
   clockwise) or off (three clicks back), and **KNOB 2-4** set its three settings, shown from 0 to 20.
 - To put an effect back to its default settings, **hold REC** for a second on its page.
-
-There is one reverb, one delay and one chorus, shared by both instruments. Each instrument turns them on and off and
-sets its own amount (Reverb Level, Delay Echo, Chorus Level), but the other settings of those three are the same for
-both; on the page they are marked **BOTH**. Distortion and phaser belong to each instrument separately. The drums and
-Paddock have no effects.
 
 ---
 
@@ -181,8 +170,6 @@ Each page draws a picture of what it shapes, and has four settings on KNOB 1-4:
 | **ENV** | the envelope | Attack | Decay | Sustain | Release |
 | **LFO** | the LFO's wave | Rate | Depth | Target (pitch, filter or volume) | Shape |
 
-The waves are Sine, Triangle, Saw, Square, Noise and FM (Wave 1 only: a sine bent by Wave 2).
-
 - To put the page you are on back to how the sound started, **hold REC** for a second.
 - Choosing a different sound with KNOB 2 on the main screen starts again from that sound's own settings, replacing
   your edits.
@@ -206,12 +193,9 @@ Six rows of drums (kick, snare, closed hat, open hat, clap and percussion) and 1
 - **KNOB 1** tempo, **KNOB 2** kit, **KNOB 3** swing (0 to 100), **KNOB 4** drum volume.
 - **REC**: tap it to clear the chosen drum's row; hold it for a second to clear the whole pattern.
 
-The **CPU** number at the top shows how hard the sound engine is working. If it reaches 80 % it turns pink, and
-SPLITMILK quietly cuts the faintest fading notes short so the sound stays clean.
-
 ### Paddock: the pad sequencer
 
-Paddock is a third instrument that plays a slow progression along with the drums. Each bar holds one note or one
+Paddock plays a slow progression along with the drums. Each bar holds one note or one
 chord (up to four notes) for its whole length, and there are up to four bars, which loop.
 
 - **To set a bar**, press a key, or hold the keys of a chord together. You hear it, and when you let go, the next bar
@@ -233,7 +217,7 @@ outlined, and the playing bar fills up pink as it plays.
 ### Automatic saving
 
 Your current setup is saved by itself about two seconds after a change, once the drums are stopped and nothing is
-sounding, so switching off loses nothing. (It waits for silence because saving would interrupt the sound.)
+sounding, so switching off loses nothing.
 
 ### The save page
 
@@ -243,9 +227,6 @@ setup: both instruments with their sounds, effects and arpeggiators, the split, 
 - **KNOB 1** chooses a slot.
 - **REC** saves to it; **PLAY** loads it. Each one asks first (`SAVE 2?`): press the same button again within three
   seconds to confirm. Any other button, or waiting, cancels.
-
-The drums stop before saving or loading. A slot is checked before it is loaded, so a damaged slot shows
-`LOAD FAILED` and changes nothing.
 
 ### Starting over
 
@@ -279,14 +260,14 @@ Basses sound an octave lower than the keys. Each instrument can play up to six n
 
 | Kit | Character | Percussion row |
 | --- | --- | --- |
-| **ROCK** | punchy kick with a beater click, fat snare | floor tom |
-| **MINI POPS** | real samples of a Korg Mini Pops 120 | wood block (the clap row plays a bright snare) |
-| **CR-78** | short, light and clicky | conga |
-| **606** | small and snappy | shaker |
-| **808** | long, low boom (the default kit) | high tom |
-| **LO-FI** | low and crushed, like an old sampler | low tom |
-| **INDUSTRIAL** | loud and long, crushed hard | heavy knock |
-| **LM-1** | real samples of a Linn LM-1 | high tom (the clap row plays a low tom) |
+| **ROCK** | punchy kick with a beater click, fat snare |
+| **MINI POPS** | real samples of a Korg Mini Pops 120 |
+| **CR-78** | short, light and clicky |
+| **606** | small and snappy |
+| **808** | long, low boom |
+| **LO-FI** | low and crushed, like an old sampler |
+| **INDUSTRIAL** | loud and long, crushed hard |
+| **LM-1** | real samples of a Linn LM-1 |
 
 On the sampled kits, the drum rows on screen are named after what they play (for example SNAP and WOOD on the Mini
 Pops, TOM L and TOM H on the LM-1).
