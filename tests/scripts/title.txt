@@ -1,0 +1,7 @@
+# the loading page (no keys: it plays ~2.2 s): the milks filling a glass half way
+500 shot
+1100 shot
+1500 shot
+2100 shot
+2600 shot
+3000 end

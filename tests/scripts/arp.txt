@@ -1,0 +1,8 @@
+# LEFT on ARP UP (the mode after CHORD IN KEY), C4 held 1.6 s; drums stopped
+100 btndown 0
+200 enc 4 1
+300 btnup 0
+400 keys 0x80
+2000 keys 0
+2200 shot
+2600 end

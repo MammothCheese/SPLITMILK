@@ -1,0 +1,21 @@
+SPLITMILK's MINI POPS kit plays samples from:
+
+  "Korg Mini Pops Sample Pack" by Drumkito (drumkito.com)
+  https://www.drumkito.com/sample-packs/korg-mini-pops-sample-pack/
+  Sampled from a Korg Mini Pops 120. Offered as a free download.
+
+The six sounds used, as SPLITMILK's MINI POPS rows:
+  KICK    bd2.wav
+  SNARE   sd3.wav
+  HAT     hihat1.wav
+  OPEN    hihat2.wav
+  SNAP    sd2.wav      (the CLAP row)
+  WOOD    wood1.wav    (the PERC row)
+
+What was done to them (tools/samples2c.py minipops DIR): each brought up to full scale, its silent tail trimmed
+(below -60 dB of its peak, a 5 ms fade), stored as 8-bit mu-law at 44.1 kHz in firmware/gen/minipops_samples.h.
+
+Terms: Drumkito offers the pack as a free download but states no licence for it, and its site reads "© Copyright 2018.
+All Rights Reserved." No permission to redistribute the sounds is given there. They are not part of SPLITMILK's GPL.
+Drumkito can be reached at hello@drumkito.com. If they ask for the sounds to be removed, remove
+firmware/gen/minipops_samples.h and go back to the synthesised MINI POPS kit.

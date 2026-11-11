@@ -1,0 +1,19 @@
+# 0.8: empty drums and PADDOCK at the start, PADDOCK's pads only (from C3), REC held on the split screen resets all
+2400 btn 11
+2600 shot
+2700 enc 0 1
+2900 shot
+3000 enc 1 1
+3100 enc 3 2
+3300 shot
+3400 enc 3 4
+3600 shot
+3700 btn 8
+3800 btn 1
+3900 enc 3 5
+4000 enc 6 3
+4200 shot
+4300 btndown 13
+5500 btnup 13
+5600 shot
+6000 end

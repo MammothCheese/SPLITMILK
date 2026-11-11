@@ -1,0 +1,9 @@
+{
+  "what": "SPLITMILK is a performance-focused firmware that separates the keyboard into two independent instruments, with chords, arpeggiators, effects and an adjustable split. Play both instruments live over built-in drum and pad sequencers to create music without endless menu-diving.",
+  "author": "MammothCheese",
+  "kinds": [
+    "synth"
+  ],
+  "image": "docs/card.png",
+  "color": "#FF7AA2"
+}

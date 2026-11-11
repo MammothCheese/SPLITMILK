@@ -1,0 +1,8 @@
+# LATCH: REC with a chord held keeps it sounding after the keys let go; REC again lets it go
+2400 keys 0x80
+2600 btn 13
+2800 keys 0
+3200 shot
+4000 btn 13
+4300 shot
+5500 end

@@ -1,0 +1,17 @@
+# SELECT moves the split, PRESETS the key, ALGORITHM the tempo
+200 enc 0 3
+500 shot
+700 enc 6 2
+900 shot
+1000 enc 1 10
+2600 shot
+2700 keys 0x2001
+3000 shot
+3100 keys 0
+3200 keys 0x100000
+3400 keys 0
+3500 enc 0 -14
+3700 shot
+3800 keys 0x10
+3900 keys 0
+4500 end

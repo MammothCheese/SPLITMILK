@@ -1,0 +1,9 @@
+# the MINI POPS (samples): KNOB2 back to it, a pattern played, the drum page
+2400 btn 11
+2500 enc 3 -3
+2600 keys 0x1
+2700 keys 0
+2800 btn 12
+4200 shot
+4400 btn 12
+5000 end

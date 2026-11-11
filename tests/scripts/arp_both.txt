@@ -1,0 +1,11 @@
+# both sides: MUSIC BOX on ARP UP, a chord held on each (the loudest case reported)
+2400 btn 0
+2450 enc 3 -9
+2500 enc 4 1
+2550 btn 1
+2600 enc 3 3
+2650 enc 4 5
+2700 shot
+3000 keys 0x91091
+7000 keys 0
+9000 end

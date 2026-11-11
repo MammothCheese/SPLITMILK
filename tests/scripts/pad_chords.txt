@@ -1,0 +1,17 @@
+# PADDOCK chords: keys held together make the bar's chord; ALGORITHM shifts a bar's chord
+2400 btn 11
+2500 enc 0 1
+2700 keys 0x91
+3000 keys 0
+3200 keys 0x1
+3400 keys 0
+3600 enc 1 1
+3700 keys 0x89
+3900 keys 0
+4000 btn 0
+4100 enc 1 2
+4300 shot
+4400 btn 12
+5200 shot
+8000 btn 12
+8500 end

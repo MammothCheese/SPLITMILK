@@ -1,0 +1,23 @@
+# 0.7: the SEQ page's two tabs, DAIRY DRUMS (ALGORITHM picks the drum) and PADDOCK
+2400 btn 11
+2600 enc 1 2
+2800 shot
+2900 enc 0 1
+3100 shot
+3200 keys 0x1
+3500 keys 0
+3600 keys 0x10
+3900 keys 0
+4000 shot
+4100 btn 0
+4200 btn 0
+4300 enc 1 3
+4800 enc 6 1
+4900 enc 4 -4
+5100 shot
+5200 btn 12
+6500 shot
+8000 btn 13
+8200 shot
+11000 btn 12
+11500 end

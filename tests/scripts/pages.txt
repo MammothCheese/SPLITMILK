@@ -1,0 +1,43 @@
+# 0.6: the pedals (tap on/off, hold for the page), the ARP page, the wave editor, REC-hold resets, the save page
+200 btn 2
+300 keys 0x80
+700 keys 0
+800 shot
+900 btndown 2
+1500 btnup 2
+1600 enc 3 6
+1800 shot
+1900 btn 1
+2100 shot
+2200 btndown 3
+2800 btnup 3
+2900 enc 2 3
+3000 enc 4 5
+3200 shot
+3300 btndown 13
+4500 btnup 13
+4600 shot
+4800 btn 10
+4900 enc 2 2
+5000 enc 5 2
+5200 shot
+5400 btn 7
+5600 shot
+5700 enc 0 1
+5900 shot
+6000 enc 0 1
+6100 enc 2 -6
+6300 shot
+6400 enc 0 1
+6600 shot
+6800 btn 9
+7000 shot
+7100 btn 13
+7300 shot
+7400 btn 13
+9400 shot
+9500 btn 8
+9700 keys 0x1000
+10200 keys 0
+10600 shot
+11000 end
