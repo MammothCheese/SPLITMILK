@@ -6,7 +6,7 @@
 
 SPLITMILK splits the FM-1's keyboard in two. The lower keys play one instrument, called **CHOC**, and the upper keys
 play another, called **BERRY**, at the same time. Play chords with your left hand and a melody with your right, or a
-bass line under a lead. A drum machine and a pad sequencer can play along.
+bass line under a lead. A drum machine and a pad sequencer complete the package.
 
 <p align="center"><img src="docs/card.png" width="480" alt="SPLITMILK's main screen: CHOC and BERRY side by side"></p>
 
@@ -18,12 +18,10 @@ bass line under a lead. A drum machine and a pad sequencer can play along.
 - **Playing modes**: single notes, one-key chords (major, minor, 7th), octaves, or an arpeggiator.
 - **Latch**: hold a chord or an arpeggio, press REC, and let go: it keeps playing.
 - **Effects for each instrument**: reverb, delay, distortion, chorus and phaser.
-- **A wave editor** to shape any sound: oscillators, filter, envelope and LFO, each with a picture.
+- **A wave editor** to shape any sound: oscillators, filter, envelope and LFO.
 - **A drum machine** with 8 kits, including real samples of a Linn LM-1 and a Korg Mini Pops.
 - **Paddock**, a pad sequencer: up to 4 bars of chords that play along with the drums.
 - **4 save slots**, and your current setup is kept when you switch off.
-- **MIDI in and out** over USB, and MIDI in on the TRS jack.
-- **A milky look**: chocolate on the left, strawberry on the right.
 
 ## Quick start
 
@@ -61,7 +59,7 @@ Everything else is in the **[user guide](docs/USER_GUIDE.md)**.
    Or, from a terminal, over USB-MIDI: `pip install mido python-rtmidi`, then
    `python tools/fm1_install.py splitmilk.fwsc`.
 
-Once installed, the FM-1 identifies itself as `FM-1_989`.
+Once installed, the FM-1 identifies itself as `FM-1_986`.
 
 **Going back to the original firmware**: restore your M-Flasher backup, or install M-VAVE's official `FM-1.fwsc`.
 SPLITMILK stores its settings and save slots where the original firmware keeps its presets, so without a backup you
@@ -94,25 +92,3 @@ share it, and anyone who receives a firmware built from it is entitled to its so
 covered by the GPL and keep their own terms. Who made what, and every third-party part:
 **[LICENSING.md](LICENSING.md)**.
 
-## For developers
-
-Every push to `main` is built by GitHub Actions, which also runs the tests; a tag `vX.Y` publishes a release.
-
-- **Build** (Linux, or Docker on other systems): install the JieLi toolchain (`tools/get_toolchain.sh`), the AC79 SDK
-  (`AC79NN_SDK_V1.2.1_2023-12-13`) and Pillow, then run `./build.sh`. The firmware is written to
-  `build/splitmilk.fwsc`.
-- **Run it on a computer** without an FM-1: `tests/run_host.sh [script]` runs the firmware and writes the screens as
-  PNG and the sound as WAV (on Windows: `CC=gcc PYTHON=python sh tests/run_host.sh`). The scripts in `tests/scripts/`
-  exercise each feature; `tests/run_tests.sh` runs them all.
-- **Sampled kits**: `tools/samples2c.py KIT DIR` turns a folder of WAVs into the firmware's sample data.
-
-```
-firmware/src/splitmilk.c   the app: the screens, the controls, the pages, MIDI, saving
-firmware/src/sm_synth.h    the instruments: the synth engine, the sounds, chords, the arpeggiator
-firmware/src/sm_drums.h    the drum machine, its kits (synthesised and sampled) and the tempo clock
-firmware/src/sm_fx.h       the effects
-firmware/src/platform.c    the platform: boot, USB, MIDI, updates, audio, storage (from Dinghy)
-firmware/gen/              generated data: the font, the drum samples
-```
-
-What changed in each version: **[CHANGELOG.md](CHANGELOG.md)**.
