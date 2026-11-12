@@ -4,6 +4,7 @@
   "kinds": [
     "synth"
   ],
+  "play": "https://joakimeriksson.github.io/fm1-emu/?fw=splitmilk&mhz=60",
   "image": "docs/card.png",
   "color": "#FF7AA2"
 }
