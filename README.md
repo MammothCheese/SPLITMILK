@@ -92,3 +92,4 @@ share it, and anyone who receives a firmware built from it is entitled to its so
 covered by the GPL and keep their own terms. Who made what, and every third-party part:
 **[LICENSING.md](LICENSING.md)**.
 
+You can also try SPLITMILK in the browser, no flashing needed, in the free community [FM-1 Emulator](https://fm1-emulator.atst.tools/).
